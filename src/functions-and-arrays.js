@@ -119,7 +119,7 @@ const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating
 function doesWordExist(wordsFind, word) {
   if (wordsFind.length < 1)
     return null
-  
+
   for (let i = 0; i < wordsFind.length; i++)
     if (wordsFind[i] === word)
       return true
@@ -144,7 +144,18 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(wordsCount, word) {
+  if (wordsCount.length < 1)
+    return 0
+
+  let count = 0
+
+  for (let i = 0; i < wordsCount.length; i++)
+    if (wordsCount[i] === word)
+      count++
+
+  return count
+}
 
 
 
