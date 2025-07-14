@@ -116,7 +116,16 @@ function uniquifyArray(wordsUnique) {
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(wordsFind, word) {
+  if (wordsFind.length < 1)
+    return null
+  
+  for (let i = 0; i < wordsFind.length; i++)
+    if (wordsFind[i] === word)
+      return true
+
+  return false
+}
 
 
 
